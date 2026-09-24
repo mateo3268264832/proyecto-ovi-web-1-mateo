@@ -1,5 +1,0 @@
-Enlace al repositorio de GitHub:
-[Pega aquí el enlace de tu repositorio, por ejemplo: https://github.com/tu-usuario/ovi-logica-computacional]
-
-Enlace al sitio publicado en GitHub Pages:
-[Pega aquí el enlace de GitHub Pages, por ejemplo: https://tu-usuario.github.io/ovi-logica-computacional/]
