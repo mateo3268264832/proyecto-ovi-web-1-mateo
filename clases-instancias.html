@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clases e instancias · OVI Lógica Computacional</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="contenedor barra-nav">
+    <a class="marca" href="../index.html"><span class="simbolo">λ</span> OVI · Lógica Computacional</a>
+    <nav aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li class="tiene-submenu">
+          <a href="../index.html" aria-current="page">Lecturas</a>
+          <ul class="submenu">
+            <li><a href="poo.html">Programación Orientada a Objetos</a></li>
+            <li><a href="parametros-condicionales.html">Parámetros y condicionales</a></li>
+            <li><a href="clases-instancias.html">Clases e instancias</a></li>
+            <li><a href="ciclos.html">Ciclos</a></li>
+            <li><a href="tablas-verdad.html">Tablas de verdad</a></li>
+          </ul>
+        </li>
+        <li><a href="../multimedia.html">Multimedia</a></li>
+        <li class="tiene-submenu">
+          <a href="../actividades.html">Actividades</a>
+          <ul class="submenu">
+            <li><a href="../actividades.html#verdadero-falso">Verdadero o falso</a></li>
+            <li><a href="../actividades.html#autoevaluacion">Autoevaluación paso a paso</a></li>
+            <li><a href="../actividades.html#terminos-clave">Términos clave</a></li>
+          </ul>
+        </li>
+        <li><a href="../autores.html">Autores</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="cabecera-lectura">
+    <div class="contenedor">
+      <p class="migas"><a href="../index.html">Lecturas</a> / Lectura 3 de 5</p>
+      <h1>Clases e instancias</h1>
+      <p class="subtitulo">El molde y la pieza: qué es exactamente una instancia.</p>
+    </div>
+  </section>
+
+  <section class="cuerpo-lectura">
+    <div class="contenedor diseño">
+      <div>
+        <p>En la primera lectura se definió una clase como un molde que describe atributos y métodos. Una <strong>instancia</strong> es, precisamente, cada objeto concreto que se crea a partir de ese molde. Llamas (s. f.) lo resume señalando que una clase es una abstracción o plantilla que no ocupa espacio en memoria por sí misma, mientras que un objeto es una instancia real de esa clase, con datos y estado propios.</p>
+
+        <p>Un buen ejemplo para fijar la idea es comparar la palabra "ave" —el concepto general, con sus características típicas (altura, color, tamaño) y sus comportamientos típicos (comer, volar, anidar)— con un ave concreta, por ejemplo un canario particular que vive en una jaula específica. La palabra "ave" funciona como la clase; el canario concreto es una instancia de esa clase, con sus propios valores para cada característica.</p>
+
+        <div class="recuadro-clave">
+          <h4>Idea clave</h4>
+          <p style="margin:0;">Interactive Chaos explica que, aunque en el lenguaje cotidiano "objeto" e "instancia" suelen usarse como sinónimos, es más preciso decir que una instancia es la materialización concreta de una clase: la clase define la estructura, y la instancia es cada elemento real construido siguiendo esa estructura.</p>
+        </div>
+
+        <p>En la práctica, un mismo programa puede crear muchas instancias de una sola clase, cada una con sus propios valores. Si <code>Estudiante</code> es la clase, entonces cada estudiante matriculado en un curso —con su propio nombre y su propio semestre— es una instancia distinta de esa clase. Esta idea es la que permite que, en programación orientada a objetos, un solo diseño (la clase) sirva para representar infinitas situaciones reales (las instancias).</p>
+      </div>
+
+      <aside>
+        <figure class="figura">
+          <img src="../img/clase-instancia.jpg" alt="Comparación entre el concepto de una clase y sus características, mecanismos y reacciones">
+          <figcaption>La clase define características, mecanismos y reacciones; cada instancia les da un valor concreto.</figcaption>
+        </figure>
+      </aside>
+    </div>
+
+    <div class="contenedor">
+      <div class="referencias">
+        <h4>Referencias (Normas APA)</h4>
+        <ul>
+          <li>Llamas, L. (s. f.). <em>Qué es una clase y una instancia en programación</em>. https://www.luisllamas.es/que-es-una-clase-y-una-instancia-programacion/</li>
+          <li>Interactive Chaos. (s. f.). <em>Clases e instancias</em>. https://interactivechaos.com/es/manual/tutorial-de-python/clases-e-instancias</li>
+        </ul>
+      </div>
+
+      <div class="navegacion-lecturas">
+        <a href="parametros-condicionales.html">← Anterior: Parámetros y condicionales</a>
+        <a href="ciclos.html">Siguiente: Ciclos →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <p>OVI · Lógica Computacional — Desarrollo Web 1, Universidad de Córdoba.</p>
+    <p><a href="../autores.html">Sobre el autor</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

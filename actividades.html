@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actividades · OVI Lógica Computacional</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="contenedor barra-nav">
+    <a class="marca" href="index.html"><span class="simbolo">λ</span> OVI · Lógica Computacional</a>
+    <nav aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="tiene-submenu">
+          <a href="lecturas/index.html">Lecturas</a>
+          <ul class="submenu">
+            <li><a href="lecturas/poo.html">Programación Orientada a Objetos</a></li>
+            <li><a href="lecturas/parametros-condicionales.html">Parámetros y condicionales</a></li>
+            <li><a href="lecturas/clases-instancias.html">Clases e instancias</a></li>
+            <li><a href="lecturas/ciclos.html">Ciclos</a></li>
+            <li><a href="lecturas/tablas-verdad.html">Tablas de verdad</a></li>
+          </ul>
+        </li>
+        <li><a href="multimedia.html">Multimedia</a></li>
+        <li class="tiene-submenu">
+          <a href="actividades.html" aria-current="page">Actividades</a>
+          <ul class="submenu">
+            <li><a href="#verdadero-falso">Verdadero o falso</a></li>
+            <li><a href="#autoevaluacion">Autoevaluación paso a paso</a></li>
+            <li><a href="#terminos-clave">Términos clave</a></li>
+          </ul>
+        </li>
+        <li><a href="autores.html">Autores</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="cabecera-lectura">
+    <div class="contenedor">
+      <h1>Actividades</h1>
+      <p class="subtitulo">Tres ejercicios sencillos, hechos solo con HTML y CSS, para repasar lo visto en las lecturas.</p>
+    </div>
+  </section>
+
+  <!-- ACTIVIDAD 1: Verdadero o Falso -->
+  <section class="seccion" id="verdadero-falso">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <span class="num">1</span>
+        <h2>Verdadero o falso</h2>
+      </div>
+      <p class="intro-seccion">Elige una opción en cada pregunta y aparecerá la retroalimentación de inmediato.</p>
+
+      <div class="pregunta">
+        <p class="enunciado">1. Una clase puede usarse para crear varios objetos distintos.</p>
+        <input type="radio" id="p1v" name="p1" class="opcion-correcta">
+        <label for="p1v">Verdadero</label>
+        <input type="radio" id="p1f" name="p1" class="opcion-incorrecta">
+        <label for="p1f">Falso</label>
+        <div class="retro correcta">¡Correcto! Una clase es un molde: a partir de ella se pueden crear tantos objetos (instancias) como se necesiten.</div>
+        <div class="retro incorrecta">No es correcto. Recuerda que una clase es un molde reutilizable: de una sola clase pueden salir muchos objetos distintos.</div>
+      </div>
+
+      <div class="pregunta">
+        <p class="enunciado">2. Un condicional siempre necesita una expresión que sea verdadera o falsa.</p>
+        <input type="radio" id="p2v" name="p2" class="opcion-correcta">
+        <label for="p2v">Verdadero</label>
+        <input type="radio" id="p2f" name="p2" class="opcion-incorrecta">
+        <label for="p2f">Falso</label>
+        <div class="retro correcta">¡Correcto! Un condicional evalúa una expresión lógica que solo puede tomar dos valores: verdadero o falso.</div>
+        <div class="retro incorrecta">No es correcto. Todo condicional depende de una expresión lógica que es, necesariamente, verdadera o falsa.</div>
+      </div>
+
+      <div class="pregunta">
+        <p class="enunciado">3. Un ciclo <code>for</code> se usa cuando no se sabe cuántas veces se repetirá una acción.</p>
+        <input type="radio" id="p3v" name="p3" class="opcion-incorrecta">
+        <label for="p3v">Verdadero</label>
+        <input type="radio" id="p3f" name="p3" class="opcion-correcta">
+        <label for="p3f">Falso</label>
+        <div class="retro correcta">¡Correcto! El <code>for</code> se usa cuando ya se sabe cuántas repeticiones se necesitan; para lo contrario se usa un <code>while</code>.</div>
+        <div class="retro incorrecta">No es correcto. Ese es justamente el caso del bucle <code>while</code>; el <code>for</code> se usa cuando el número de repeticiones ya se conoce.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVIDAD 2: Acordeón de autoevaluación -->
+  <section class="seccion seccion-alt" id="autoevaluacion">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <span class="num">2</span>
+        <h2>Autoevaluación paso a paso</h2>
+      </div>
+      <p class="intro-seccion">Piensa tu propia respuesta antes de abrir cada pregunta.</p>
+
+      <div class="acordeon">
+        <details>
+          <summary>¿Cuál es la diferencia entre una clase y un objeto?</summary>
+          <p class="respuesta">La clase es la plantilla o el molde que define atributos y métodos; el objeto es cada elemento concreto creado a partir de esa plantilla, también llamado instancia.</p>
+        </details>
+        <details>
+          <summary>¿Para qué sirve un parámetro en una función?</summary>
+          <p class="respuesta">Permite que la función reciba información externa cada vez que se ejecuta, en lugar de trabajar siempre con los mismos valores fijos.</p>
+        </details>
+        <details>
+          <summary>¿Qué diferencia hay entre un bucle <code>for</code> y uno <code>while</code>?</summary>
+          <p class="respuesta">El <code>for</code> se usa cuando se conoce de antemano el número de repeticiones; el <code>while</code> se usa cuando la repetición depende de que una condición se siga cumpliendo.</p>
+        </details>
+        <details>
+          <summary>¿Cuándo es falsa una conjunción (p ∧ q)?</summary>
+          <p class="respuesta">Siempre que al menos una de las dos proposiciones sea falsa. Solo es verdadera cuando p y q son verdaderas a la vez.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVIDAD 3: Tarjetas de volteo -->
+  <section class="seccion" id="terminos-clave">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <span class="num">3</span>
+        <h2>Términos clave</h2>
+      </div>
+      <p class="intro-seccion">Haz clic sobre cada tarjeta para descubrir su definición.</p>
+
+      <div class="rejilla-flip">
+
+        <div class="flip">
+          <input type="checkbox" id="t1">
+          <label class="flip-etiqueta" for="t1">
+            <div class="flip-interior">
+              <div class="flip-cara flip-frente">Clase</div>
+              <div class="flip-cara flip-dorso">Molde que define los atributos y métodos que tendrán sus objetos.</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="flip">
+          <input type="checkbox" id="t2">
+          <label class="flip-etiqueta" for="t2">
+            <div class="flip-interior">
+              <div class="flip-cara flip-frente">Objeto / instancia</div>
+              <div class="flip-cara flip-dorso">Elemento concreto creado a partir de una clase, con sus propios valores.</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="flip">
+          <input type="checkbox" id="t3">
+          <label class="flip-etiqueta" for="t3">
+            <div class="flip-interior">
+              <div class="flip-cara flip-frente">Parámetro</div>
+              <div class="flip-cara flip-dorso">Valor que una función recibe desde fuera para poder ejecutar su tarea.</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="flip">
+          <input type="checkbox" id="t4">
+          <label class="flip-etiqueta" for="t4">
+            <div class="flip-interior">
+              <div class="flip-cara flip-frente">Condicional</div>
+              <div class="flip-cara flip-dorso">Estructura que evalúa si algo es verdadero o falso y elige un camino u otro.</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="flip">
+          <input type="checkbox" id="t5">
+          <label class="flip-etiqueta" for="t5">
+            <div class="flip-interior">
+              <div class="flip-cara flip-frente">Ciclo</div>
+              <div class="flip-cara flip-dorso">Estructura que repite un bloque de instrucciones mientras se cumpla una condición.</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="flip">
+          <input type="checkbox" id="t6">
+          <label class="flip-etiqueta" for="t6">
+            <div class="flip-interior">
+              <div class="flip-cara flip-frente">Tabla de verdad</div>
+              <div class="flip-cara flip-dorso">Resumen de todos los resultados posibles de una proposición según sus valores V o F.</div>
+            </div>
+          </label>
+        </div>
+
+      </div>
+      <p class="pista-flip">Sin JavaScript: el volteo se logra combinando una casilla oculta con <code>:checked</code> en CSS.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <p>OVI · Lógica Computacional — Desarrollo Web 1, Universidad de Córdoba.</p>
+    <p><a href="autores.html">Sobre el autor</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

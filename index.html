@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OVI · Lógica Computacional</title>
+<meta name="description" content="Objeto Virtual de Información sobre Lógica Computacional: programación orientada a objetos, condicionales, ciclos y tablas de verdad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="contenedor barra-nav">
+    <a class="marca" href="index.html"><span class="simbolo">λ</span> OVI · Lógica Computacional</a>
+    <nav aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li class="tiene-submenu">
+          <a href="lecturas/index.html">Lecturas</a>
+          <ul class="submenu">
+            <li><a href="lecturas/poo.html">Programación Orientada a Objetos</a></li>
+            <li><a href="lecturas/parametros-condicionales.html">Parámetros y condicionales</a></li>
+            <li><a href="lecturas/clases-instancias.html">Clases e instancias</a></li>
+            <li><a href="lecturas/ciclos.html">Ciclos</a></li>
+            <li><a href="lecturas/tablas-verdad.html">Tablas de verdad</a></li>
+          </ul>
+        </li>
+        <li><a href="multimedia.html">Multimedia</a></li>
+        <li class="tiene-submenu">
+          <a href="actividades.html">Actividades</a>
+          <ul class="submenu">
+            <li><a href="actividades.html#verdadero-falso">Verdadero o falso</a></li>
+            <li><a href="actividades.html#autoevaluacion">Autoevaluación paso a paso</a></li>
+            <li><a href="actividades.html#terminos-clave">Términos clave</a></li>
+          </ul>
+        </li>
+        <li><a href="autores.html">Autores</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="contenedor">
+      <div>
+        <p class="hero-eyebrow">Desarrollo Web 1 · Objeto Virtual de Información</p>
+        <h1>Pensar en verdadero y falso: las bases de la lógica computacional</h1>
+        <p>Este OVI reúne, en un solo sitio, los conceptos con los que arranca todo programador: cómo piensa una computadora en términos de proposiciones, cómo se organiza el código en clases y objetos, y cómo controlan el flujo un condicional o un ciclo.</p>
+        <div class="hero-acciones">
+          <a class="boton boton-primario" href="lecturas/index.html">Ir a las lecturas</a>
+          <a class="boton boton-secundario" href="actividades.html">Probar las actividades</a>
+        </div>
+      </div>
+      <div class="patron-logico" aria-hidden="true">
+        <span class="v">V</span><span class="f">F</span><span class="f">F</span><span class="v">V</span>
+        <span class="f">F</span><span class="v">V</span><span class="v">V</span><span class="f">F</span>
+        <span class="v">V</span><span class="v">V</span><span class="f">F</span><span class="v">V</span>
+        <span class="f">F</span><span class="f">F</span><span class="v">V</span><span class="f">F</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <span class="num">01</span>
+        <h2>¿Qué es la lógica computacional?</h2>
+      </div>
+      <p class="intro-seccion">La lógica computacional es la rama que estudia cómo representar el razonamiento —proposiciones que son verdaderas o falsas, y las reglas para combinarlas— dentro de un lenguaje que una máquina pueda ejecutar. Antes de escribir la primera línea de código, un programador ya está pensando en lógica: decide qué condición debe cumplirse para que algo ocurra, cuántas veces debe repetirse una tarea, y cómo debe organizarse la información para representar el mundo real.</p>
+      <p class="intro-seccion">En este curso, esa forma de pensar se traduce en cuatro ideas que se refuerzan entre sí y que este OVI desarrolla paso a paso: la <strong>programación orientada a objetos</strong> como manera de modelar el mundo en clases y objetos, los <strong>condicionales</strong> que permiten tomar decisiones, los <strong>ciclos</strong> que permiten repetir instrucciones, y las <strong>tablas de verdad</strong> que son la base matemática de toda condición.</p>
+    </div>
+  </section>
+
+  <section class="seccion seccion-alt">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <span class="num">02</span>
+        <h2>Objetivos de este OVI</h2>
+      </div>
+      <div class="rejilla rejilla-3">
+        <div class="tarjeta">
+          <span class="etiqueta">Comprender</span>
+          <h3>Explicar con claridad</h3>
+          <p>Presentar de forma sencilla los conceptos fundamentales de la lógica computacional, apoyados en ejemplos, diagramas y fuentes citadas en formato APA.</p>
+        </div>
+        <div class="tarjeta">
+          <span class="etiqueta">Relacionar</span>
+          <h3>Conectar teoría y práctica</h3>
+          <p>Mostrar, a través de video, cómo estas ideas se aplican en ejercicios reales de programación vistos en el curso.</p>
+        </div>
+        <div class="tarjeta">
+          <span class="etiqueta">Practicar</span>
+          <h3>Reforzar con actividades</h3>
+          <p>Ofrecer ejercicios cortos e interactivos —sin necesidad de JavaScript— para autoevaluar lo aprendido en cada tema.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <span class="num">03</span>
+        <h2>Recorrido por las lecturas</h2>
+      </div>
+      <p class="intro-seccion">Cinco páginas, un mismo hilo conductor: de la forma de organizar el código con objetos, a la forma de decidir y repetir, hasta llegar a la base lógica que sostiene cada condición.</p>
+      <div class="rejilla rejilla-3">
+        <article class="tarjeta tarjeta-lectura">
+          <img src="img/clase-objeto.jpg" alt="Diagrama de una clase generando varios objetos">
+          <div class="cuerpo">
+            <span class="etiqueta">Lectura 1</span>
+            <h3>Programación Orientada a Objetos</h3>
+            <p>Qué es una clase, qué es un objeto y por qué este paradigma cambia la forma de escribir programas.</p>
+            <a class="enlace-lectura" href="lecturas/poo.html">Leer</a>
+          </div>
+        </article>
+        <article class="tarjeta tarjeta-lectura">
+          <img src="img/flujo-condicional.png" alt="Diagrama de flujo de una decisión condicional">
+          <div class="cuerpo">
+            <span class="etiqueta">Lectura 2</span>
+            <h3>Parámetros y condicionales</h3>
+            <p>Cómo una función recibe información y cómo un condicional decide qué camino seguir.</p>
+            <a class="enlace-lectura" href="lecturas/parametros-condicionales.html">Leer</a>
+          </div>
+        </article>
+        <article class="tarjeta tarjeta-lectura">
+          <img src="img/clase-instancia.jpg" alt="Diagrama que compara una clase con una instancia">
+          <div class="cuerpo">
+            <span class="etiqueta">Lectura 3</span>
+            <h3>Clases e instancias</h3>
+            <p>La diferencia entre el molde y la pieza: qué es exactamente una instancia de una clase.</p>
+            <a class="enlace-lectura" href="lecturas/clases-instancias.html">Leer</a>
+          </div>
+        </article>
+        <article class="tarjeta tarjeta-lectura">
+          <img src="img/bucles-ciclos.jpg" alt="Ilustración sobre bucles o ciclos de programación">
+          <div class="cuerpo">
+            <span class="etiqueta">Lectura 4</span>
+            <h3>Ciclos (bucles)</h3>
+            <p>Por qué repetir instrucciones es una de las tareas más comunes —y más útiles— de un programa.</p>
+            <a class="enlace-lectura" href="lecturas/ciclos.html">Leer</a>
+          </div>
+        </article>
+        <article class="tarjeta tarjeta-lectura">
+          <img src="img/tablas-verdad.jpeg" alt="Tablas de verdad de los operadores lógicos">
+          <div class="cuerpo">
+            <span class="etiqueta">Lectura 5</span>
+            <h3>Tablas de verdad</h3>
+            <p>La herramienta que resume, para cada operador lógico, todos sus posibles resultados.</p>
+            <a class="enlace-lectura" href="lecturas/tablas-verdad.html">Leer</a>
+          </div>
+        </article>
+        <article class="tarjeta" style="display:flex; flex-direction:column; justify-content:center;">
+          <span class="etiqueta">Y además</span>
+          <h3>Video y actividades</h3>
+          <p>Complementa cada lectura con la sección de <a href="multimedia.html">multimedia</a> y pon a prueba lo aprendido en <a href="actividades.html">actividades</a>.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <p>OVI · Lógica Computacional — Desarrollo Web 1, Universidad de Córdoba.</p>
+    <p><a href="autores.html">Sobre el autor</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

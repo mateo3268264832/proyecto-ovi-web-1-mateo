@@ -1,0 +1,39 @@
+/* =========================================================
+   VARIABLES.CSS — Tokens de diseño del OVI de Lógica Computacional
+   ========================================================= */
+:root{
+  /* Color base */
+  --bg:            #EEF1F6;
+  --bg-soft:       #E3E8F0;
+  --surface:       #FFFFFF;
+  --border:        #D3DAE6;
+  --ink:           #1A2130;
+  --ink-soft:      #4B5569;
+
+  /* Identidad: navy de "circuito" + dos polos lógicos */
+  --navy:          #101A33;
+  --navy-soft:     #1C2B4D;
+  --indigo:        #3552A6;
+  --indigo-soft:   #E9EDFA;
+  --verdadero:     #1F7A5C;
+  --verdadero-bg:  #E4F3ED;
+  --falso:         #B03A2E;
+  --falso-bg:      #FBEAE7;
+
+  /* Tipografía */
+  --font-display: 'IBM Plex Mono', 'Courier New', monospace;
+  --font-body:    'IBM Plex Sans', 'Segoe UI', sans-serif;
+
+  /* Espaciado */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+
+  /* Forma */
+  --radius-s: 4px;
+  --radius-m: 10px;
+  --max-width: 1120px;
+  --border-w: 1px;
+}

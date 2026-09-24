@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parámetros y condicionales · OVI Lógica Computacional</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="contenedor barra-nav">
+    <a class="marca" href="../index.html"><span class="simbolo">λ</span> OVI · Lógica Computacional</a>
+    <nav aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li class="tiene-submenu">
+          <a href="../index.html" aria-current="page">Lecturas</a>
+          <ul class="submenu">
+            <li><a href="poo.html">Programación Orientada a Objetos</a></li>
+            <li><a href="parametros-condicionales.html">Parámetros y condicionales</a></li>
+            <li><a href="clases-instancias.html">Clases e instancias</a></li>
+            <li><a href="ciclos.html">Ciclos</a></li>
+            <li><a href="tablas-verdad.html">Tablas de verdad</a></li>
+          </ul>
+        </li>
+        <li><a href="../multimedia.html">Multimedia</a></li>
+        <li class="tiene-submenu">
+          <a href="../actividades.html">Actividades</a>
+          <ul class="submenu">
+            <li><a href="../actividades.html#verdadero-falso">Verdadero o falso</a></li>
+            <li><a href="../actividades.html#autoevaluacion">Autoevaluación paso a paso</a></li>
+            <li><a href="../actividades.html#terminos-clave">Términos clave</a></li>
+          </ul>
+        </li>
+        <li><a href="../autores.html">Autores</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="cabecera-lectura">
+    <div class="contenedor">
+      <p class="migas"><a href="../index.html">Lecturas</a> / Lectura 2 de 5</p>
+      <h1>Parámetros y condicionales</h1>
+      <p class="subtitulo">Cómo se le pasa información a una función y cómo se toman decisiones.</p>
+    </div>
+  </section>
+
+  <section class="cuerpo-lectura">
+    <div class="contenedor diseño">
+      <div>
+        <h2 style="font-size:1.15rem;">Parámetros: la información que recibe una función</h2>
+        <p>Un <strong>parámetro</strong> es un valor que una función necesita para poder ejecutar su tarea. Llamas (s. f.) lo describe como el mecanismo que permite que una función reciba datos externos al momento de ser invocada, en lugar de trabajar siempre con valores fijos escritos dentro de su código. Por ejemplo, una función <code>calcularPromedio(nota1, nota2, nota3)</code> necesita esas tres notas como parámetros para poder devolver un resultado.</p>
+        <p>Gracias a los parámetros, una misma función puede reutilizarse con datos distintos cada vez que se llama, en lugar de escribir una función nueva para cada caso particular. Esto conecta directamente con la idea de reutilización de código que ya se vio en la lectura sobre POO: los métodos de una clase casi siempre reciben parámetros para operar sobre datos concretos.</p>
+
+        <h2 style="font-size:1.15rem;">Condicionales: tomar decisiones dentro del código</h2>
+        <p>Un <strong>condicional</strong> es una estructura que evalúa si una condición es verdadera o falsa y, según el resultado, ejecuta un bloque de instrucciones u otro. Luis Llamas explica que la programación condicional es la que permite que un programa reaccione de forma distinta ante distintas situaciones, en lugar de ejecutar siempre la misma secuencia de pasos sin importar los datos de entrada.</p>
+
+        <div class="recuadro-clave">
+          <h4>Idea clave</h4>
+          <p style="margin:0;">Toda estructura condicional (<code>si</code> / <code>si no</code>) se apoya en una expresión que solo puede tomar dos valores: verdadero o falso. Esa expresión es, exactamente, lo que estudian las tablas de verdad de la última lectura de este OVI.</p>
+        </div>
+
+        <p>El ejemplo más clásico de un condicional es comparar dos valores para decidir un ganador: si la puntuación del Jugador 1 es mayor que la del Jugador 2, se muestra un mensaje de felicitación para el primero; si esa condición es falsa, se sigue el camino alternativo (<em>else</em>) y se felicita al segundo jugador. El diagrama de flujo de la derecha ilustra exactamente ese caso.</p>
+      </div>
+
+      <aside>
+        <figure class="figura">
+          <img src="../img/flujo-condicional.png" alt="Diagrama de flujo que compara la puntuación de dos jugadores y decide un ganador">
+          <figcaption>Diagrama de flujo de un condicional simple: verdadero sigue un camino, falso sigue otro.</figcaption>
+        </figure>
+      </aside>
+    </div>
+
+    <div class="contenedor">
+      <div class="referencias">
+        <h4>Referencias (Normas APA)</h4>
+        <ul>
+          <li>Luis Llamas. (s. f.). <em>Programación condicional</em>. https://www.luisllamas.es/programacion-condicionales/</li>
+          <li>Llamas, L. (s. f.). <em>Parámetros de una función</em>. https://www.luisllamas.es/programacion-parametros-funcion/</li>
+        </ul>
+      </div>
+
+      <div class="navegacion-lecturas">
+        <a href="poo.html">← Anterior: POO</a>
+        <a href="clases-instancias.html">Siguiente: Clases e instancias →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <p>OVI · Lógica Computacional — Desarrollo Web 1, Universidad de Córdoba.</p>
+    <p><a href="../autores.html">Sobre el autor</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

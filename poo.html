@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programación Orientada a Objetos · OVI Lógica Computacional</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="contenedor barra-nav">
+    <a class="marca" href="../index.html"><span class="simbolo">λ</span> OVI · Lógica Computacional</a>
+    <nav aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li class="tiene-submenu">
+          <a href="../index.html" aria-current="page">Lecturas</a>
+          <ul class="submenu">
+            <li><a href="poo.html">Programación Orientada a Objetos</a></li>
+            <li><a href="parametros-condicionales.html">Parámetros y condicionales</a></li>
+            <li><a href="clases-instancias.html">Clases e instancias</a></li>
+            <li><a href="ciclos.html">Ciclos</a></li>
+            <li><a href="tablas-verdad.html">Tablas de verdad</a></li>
+          </ul>
+        </li>
+        <li><a href="../multimedia.html">Multimedia</a></li>
+        <li class="tiene-submenu">
+          <a href="../actividades.html">Actividades</a>
+          <ul class="submenu">
+            <li><a href="../actividades.html#verdadero-falso">Verdadero o falso</a></li>
+            <li><a href="../actividades.html#autoevaluacion">Autoevaluación paso a paso</a></li>
+            <li><a href="../actividades.html#terminos-clave">Términos clave</a></li>
+          </ul>
+        </li>
+        <li><a href="../autores.html">Autores</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="cabecera-lectura">
+    <div class="contenedor">
+      <p class="migas"><a href="../index.html">Lecturas</a> / Lectura 1 de 5</p>
+      <h1>Programación Orientada a Objetos</h1>
+      <p class="subtitulo">El paradigma que organiza el código alrededor de clases y objetos.</p>
+    </div>
+  </section>
+
+  <section class="cuerpo-lectura">
+    <div class="contenedor diseño">
+      <div>
+        <p>La Programación Orientada a Objetos (POO) es un paradigma —una forma de pensar y organizar el código— que propone modelar un programa como un conjunto de <strong>objetos</strong> que interactúan entre sí, en lugar de una simple lista de instrucciones que se ejecutan una tras otra. Cada objeto agrupa, en un mismo lugar, los datos que lo describen y las acciones que puede realizar.</p>
+
+        <p>Para crear un objeto primero se necesita una <strong>clase</strong>: una plantilla o molde que define qué información va a tener el objeto (sus atributos) y qué puede hacer (sus métodos). Por ejemplo, una clase <code>Estudiante</code> podría definir atributos como nombre y semestre, y métodos como inscribirse a una materia. A partir de esa única clase se pueden crear tantos objetos —tantos estudiantes concretos— como se necesiten.</p>
+
+        <div class="recuadro-clave">
+          <h4>Idea clave</h4>
+          <p style="margin:0;">Según IBM Documentation, en la POO los programas se diseñan usando objetos que interactúan entre sí, donde cada objeto representa una instancia de una clase, y las clases pueden aprovechar relaciones de jerarquía y herencia para compartir características entre sí.</p>
+        </div>
+
+        <p>Este enfoque trae varias ventajas frente a la programación puramente secuencial. Martínez Canelo (2020) explica que la POO facilita la reutilización de código, porque una clase ya escrita puede usarse para crear múltiples objetos o servir de base a nuevas clases mediante la herencia, y que esto favorece programas más ordenados y fáciles de mantener a medida que crecen.</p>
+
+        <p>Los cuatro pilares que suelen citarse en la POO son la <strong>abstracción</strong> (modelar solo lo relevante del problema), el <strong>encapsulamiento</strong> (proteger los datos internos de un objeto), la <strong>herencia</strong> (crear clases nuevas a partir de otras ya existentes) y el <strong>polimorfismo</strong> (que un mismo método se comporte distinto según el objeto que lo ejecute). A lo largo de las siguientes lecturas de este OVI se irán viendo, en la práctica, varias de estas ideas: cómo se definen parámetros, cómo se crean instancias y cómo se repiten acciones dentro de una clase.</p>
+      </div>
+
+      <aside>
+        <figure class="figura">
+          <img src="../img/clase-objeto.jpg" alt="Una clase como molde que genera varios objetos independientes">
+          <figcaption>Una misma clase puede generar muchos objetos distintos entre sí.</figcaption>
+        </figure>
+      </aside>
+    </div>
+
+    <div class="contenedor">
+      <div class="referencias">
+        <h4>Referencias (Normas APA)</h4>
+        <ul>
+          <li>Martínez Canelo, M. (2020). <em>¿Qué es la Programación Orientada a Objetos?</em> Profile. https://profile.es/blog/que-es-la-programacion-orientada-a-objetos/</li>
+          <li>IBM. (s. f.). <em>Programación orientada a objetos</em>. IBM Documentation. https://www.ibm.com/docs/es/spss-modeler/saas?topic=language-object-oriented-programming</li>
+        </ul>
+      </div>
+
+      <div class="navegacion-lecturas">
+        <a href="../index.html">← Todas las lecturas</a>
+        <a href="parametros-condicionales.html">Siguiente: Parámetros y condicionales →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <p>OVI · Lógica Computacional — Desarrollo Web 1, Universidad de Córdoba.</p>
+    <p><a href="../autores.html">Sobre el autor</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tablas de verdad · OVI Lógica Computacional</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="contenedor barra-nav">
+    <a class="marca" href="../index.html"><span class="simbolo">λ</span> OVI · Lógica Computacional</a>
+    <nav aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li class="tiene-submenu">
+          <a href="../index.html" aria-current="page">Lecturas</a>
+          <ul class="submenu">
+            <li><a href="poo.html">Programación Orientada a Objetos</a></li>
+            <li><a href="parametros-condicionales.html">Parámetros y condicionales</a></li>
+            <li><a href="clases-instancias.html">Clases e instancias</a></li>
+            <li><a href="ciclos.html">Ciclos</a></li>
+            <li><a href="tablas-verdad.html">Tablas de verdad</a></li>
+          </ul>
+        </li>
+        <li><a href="../multimedia.html">Multimedia</a></li>
+        <li class="tiene-submenu">
+          <a href="../actividades.html">Actividades</a>
+          <ul class="submenu">
+            <li><a href="../actividades.html#verdadero-falso">Verdadero o falso</a></li>
+            <li><a href="../actividades.html#autoevaluacion">Autoevaluación paso a paso</a></li>
+            <li><a href="../actividades.html#terminos-clave">Términos clave</a></li>
+          </ul>
+        </li>
+        <li><a href="../autores.html">Autores</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="cabecera-lectura">
+    <div class="contenedor">
+      <p class="migas"><a href="../index.html">Lecturas</a> / Lectura 5 de 5</p>
+      <h1>Tablas de verdad</h1>
+      <p class="subtitulo">La herramienta que resume todos los resultados posibles de un operador lógico.</p>
+    </div>
+  </section>
+
+  <section class="cuerpo-lectura">
+    <div class="contenedor diseño">
+      <div>
+        <p>Una <strong>tabla de verdad</strong> es una representación que muestra, de forma ordenada, todos los posibles valores de verdad de una proposición compuesta según los valores de verdad de sus proposiciones simples. KeepCoding explica que estas tablas son la herramienta que la lógica utiliza para comprobar si un enunciado es verdadero o falso en cada una de sus combinaciones posibles, y que por eso son la base para construir y validar condicionales en programación.</p>
+        <p>Miguel (2015) añade que cada fila de la tabla representa una combinación distinta de valores (verdadero o falso) para las proposiciones que intervienen, y que el resultado final depende únicamente del operador lógico que las conecte. A continuación se presentan los operadores más usados en programación, con <strong>V</strong> para verdadero y <strong>F</strong> para falso.</p>
+      </div>
+      <aside>
+        <figure class="figura">
+          <img src="../img/tablas-verdad.jpeg" alt="Resumen visual de las tablas de verdad: negación, disyunción, condicional, conjunción, disyunción exclusiva y bicondicional">
+          <figcaption>Resumen de los seis operadores lógicos más comunes.</figcaption>
+        </figure>
+      </aside>
+    </div>
+
+    <div class="contenedor">
+      <div class="rejilla rejilla-3" style="margin-top: var(--space-2);">
+
+        <div>
+          <table class="tabla-verdad">
+            <caption>Negación (¬p)</caption>
+            <thead><tr><th>p</th><th>¬p</th></tr></thead>
+            <tbody>
+              <tr><td class="v">V</td><td class="f">F</td></tr>
+              <tr><td class="f">F</td><td class="v">V</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.9rem; color:var(--ink-soft);">Invierte el valor de la proposición: si p es verdadera, ¬p es falsa, y viceversa.</p>
+        </div>
+
+        <div>
+          <table class="tabla-verdad">
+            <caption>Conjunción (p ∧ q)</caption>
+            <thead><tr><th>p</th><th>q</th><th>p ∧ q</th></tr></thead>
+            <tbody>
+              <tr><td class="v">V</td><td class="v">V</td><td class="v">V</td></tr>
+              <tr><td class="v">V</td><td class="f">F</td><td class="f">F</td></tr>
+              <tr><td class="f">F</td><td class="v">V</td><td class="f">F</td></tr>
+              <tr><td class="f">F</td><td class="f">F</td><td class="f">F</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.9rem; color:var(--ink-soft);">Solo es verdadera cuando ambas proposiciones son verdaderas (equivale al "y" del lenguaje natural).</p>
+        </div>
+
+        <div>
+          <table class="tabla-verdad">
+            <caption>Disyunción (p ∨ q)</caption>
+            <thead><tr><th>p</th><th>q</th><th>p ∨ q</th></tr></thead>
+            <tbody>
+              <tr><td class="v">V</td><td class="v">V</td><td class="v">V</td></tr>
+              <tr><td class="v">V</td><td class="f">F</td><td class="v">V</td></tr>
+              <tr><td class="f">F</td><td class="v">V</td><td class="v">V</td></tr>
+              <tr><td class="f">F</td><td class="f">F</td><td class="f">F</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.9rem; color:var(--ink-soft);">Es verdadera si al menos una de las dos proposiciones lo es (equivale al "o" del lenguaje natural).</p>
+        </div>
+
+        <div>
+          <table class="tabla-verdad">
+            <caption>Disyunción exclusiva (p ⊻ q)</caption>
+            <thead><tr><th>p</th><th>q</th><th>p ⊻ q</th></tr></thead>
+            <tbody>
+              <tr><td class="v">V</td><td class="v">V</td><td class="f">F</td></tr>
+              <tr><td class="v">V</td><td class="f">F</td><td class="v">V</td></tr>
+              <tr><td class="f">F</td><td class="v">V</td><td class="v">V</td></tr>
+              <tr><td class="f">F</td><td class="f">F</td><td class="f">F</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.9rem; color:var(--ink-soft);">Es verdadera únicamente cuando p y q tienen valores distintos entre sí.</p>
+        </div>
+
+        <div>
+          <table class="tabla-verdad">
+            <caption>Condicional (p ⇒ q)</caption>
+            <thead><tr><th>p</th><th>q</th><th>p ⇒ q</th></tr></thead>
+            <tbody>
+              <tr><td class="v">V</td><td class="v">V</td><td class="v">V</td></tr>
+              <tr><td class="v">V</td><td class="f">F</td><td class="f">F</td></tr>
+              <tr><td class="f">F</td><td class="v">V</td><td class="v">V</td></tr>
+              <tr><td class="f">F</td><td class="f">F</td><td class="v">V</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.9rem; color:var(--ink-soft);">Solo es falsa cuando p es verdadera y q es falsa. Es la base lógica de la instrucción "si... entonces".</p>
+        </div>
+
+        <div>
+          <table class="tabla-verdad">
+            <caption>Bicondicional (p ⇔ q)</caption>
+            <thead><tr><th>p</th><th>q</th><th>p ⇔ q</th></tr></thead>
+            <tbody>
+              <tr><td class="v">V</td><td class="v">V</td><td class="v">V</td></tr>
+              <tr><td class="v">V</td><td class="f">F</td><td class="f">F</td></tr>
+              <tr><td class="f">F</td><td class="v">V</td><td class="f">F</td></tr>
+              <tr><td class="f">F</td><td class="f">F</td><td class="v">V</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.9rem; color:var(--ink-soft);">Es verdadera cuando p y q tienen el mismo valor de verdad, ambas verdaderas o ambas falsas.</p>
+        </div>
+
+      </div>
+
+      <div class="recuadro-clave">
+        <h4>De la tabla al condicional en código</h4>
+        <p style="margin:0;">Cada vez que se escribe un <code>if</code> con más de una condición —por ejemplo <code>si edad &gt; 18 Y tiene_carnet</code>— en realidad se está evaluando una conjunción (p ∧ q). Por eso entender estas tablas ayuda a predecir, antes de ejecutar el programa, en qué casos entrará o no a un bloque condicional.</p>
+      </div>
+
+      <div class="referencias">
+        <h4>Referencias (Normas APA)</h4>
+        <ul>
+          <li>KeepCoding. (s. f.). <em>¿Qué son las tablas de verdad? Lógica en programación</em>. https://keepcoding.io/blog/que-son-tablas-de-verdad-logica-en-progrmacion/</li>
+          <li>Miguel, P. E. (2015, 18 de junio). <em>Tablas de verdad</em>. Programación desde cero. https://patriciaemiguel.com/conceptos/2015/06/18/tablas-de-verdad.html</li>
+        </ul>
+      </div>
+
+      <div class="navegacion-lecturas">
+        <a href="ciclos.html">← Anterior: Ciclos</a>
+        <a href="../index.html">Volver a lecturas →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <p>OVI · Lógica Computacional — Desarrollo Web 1, Universidad de Córdoba.</p>
+    <p><a href="../autores.html">Sobre el autor</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
